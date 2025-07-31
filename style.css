@@ -1,0 +1,22 @@
+:root{
+    --primary-color: #5828E3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* MOBILE: 375px / DESKTOP: 1920px*/
+
+img{
+    max-width: 100%;
+}
+
+.divider{
+    background-color: var(--primary-color);
+}
+
+.btn{
+    background-color: var(--primary-color);
+}
