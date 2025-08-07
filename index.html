@@ -118,7 +118,7 @@
                         </p>
                     </div>
                     <div class="learn-more">
-                         <p>Learn More <a href="#" class="btn"><img src="icons/IconArrow.svg"></a></p>
+                         <a href="#" class="container">Learn More <img class="btn" src="icons/IconArrow.svg"></a>
                     </div>
                 </div>
                 <div class="feat-card-security">
@@ -131,7 +131,7 @@
                         </p>
                     </div>
                     <div class="learn-more">
-                         <p>Learn More <a href="#" class="btn"><img src="icons/IconArrow.svg"></a></p>
+                         <a href="#" class="container">Learn More <img class="btn" src="icons/IconArrow.svg"></a>
                     </div>
                 </div>
                 <div class="feat-card-functionality">
@@ -144,7 +144,7 @@
                         </p>
                     </div>
                     <div class="learn-more">
-                         <p>Learn More <a href="#" class="btn"><img src="icons/IconArrow.svg"></a></p>
+                         <a href="#" class="container">Learn More <img class="btn" src="icons/IconArrow.svg"></a>
                     </div>
                 </div>
             </div>
@@ -156,8 +156,8 @@
                     Enhanced Project Management: 
                     Obtaining Detailed Time and Date Information for Optimal Tracking and Organization
                 </p>
-                <div>
-                    <p class="ratings">2.5x</p>
+                <div class="container">
+                    <h5>2.5x</h5>
                     <p>
                         Mobiles apps achive a conversion rate that is 2.7
                         times higher than mobile websites
@@ -169,16 +169,19 @@
                 <img src="images/Infos.png" alt="Coco Infos">
             </div>
         </section>
-        <section class="pricing">
+        <section class="pricing container">
             <p class="tag">Pricing</p>
             <h2>Pricing plans that scale</h2>
-            <p>Simple, trasnparent pricing that grows with you. Try any plan free for 30 days.</p>
+            <p class="subtitle">
+                Simple, transparent pricing that grows with you. 
+                Try any plan free for 30 days.
+            </p>
             <div class="grid cards-pricing">
                 <div class="card-pricing">
                     <h3>$0/month</h3>
-                    <p>Personal</p>
+                    <h5>Personal</h5>
                     <p>Ideal for small teams and startups.</p>
-                    <div>
+                    <div class="container">
                         <p><img src="icons/IconCheck.svg"> Access to all basic features</p>
                         <p><img src="icons/IconCheck.svg"> Basic reporting and analytics</p>
                         <p><img src="icons/IconCheck.svg"> Up to 10 individual users</p>
@@ -189,7 +192,7 @@
                     </div>
                     <a href="#" class="btn">Get Started</a>
                 </div>
-                <div class="cards-pricing">
+                <div class="card-pricing main">
                     <div class="container">
                         <div>
                             <h4>Basic plan</h4>
@@ -201,7 +204,7 @@
                         </div>
                     </div>
                     <hr>
-                    <p>FEATURES</p>
+                    <h5>FEATURES</h5>
                     <p>Everything in our <b>free plan</b> plus...</p>
                     <div class="container">
                         <div>
@@ -225,7 +228,9 @@
             </div>
         </section>
         <section class="happy-customers">
-            <p class="tag">Happy Customers</p>
+            <div class="container">
+                <p class="tag">Happy Customers</p>
+            </div>
             <h2>How happy they are with our service</h2>
             <div class="desktop">
                 <!--TODO: adicionar cada um dos customers do desktop-->
@@ -236,20 +241,25 @@
                         <div class="container">
                             <img src="images/PickyPFP.png" alt="User Profile Picure">
                             <div>
-                                <p><b>Picky Bobocil</b></p>
+                                <b>Picky Bobocil</b>
                                 <p>Retiredman</p>
                             </div>
                             <img src="icons/quotes.svg" alt="Reference Quotes">
                         </div>
-                        <img src="icons/Star.svg" alt="Rating Star">
-                        <img src="icons/Star.svg" alt="Rating Star">
-                        <img src="icons/Star.svg" alt="Rating Star">
-                        <img src="icons/Star.svg" alt="Rating Star">
-                        <img src="icons/Star.svg" alt="Rating Star">
+                        <div class="rating-stars">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <span>5.0</span>
+                        </div>
                         <p>
                             “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
                         </p>
                     </div>
+                </div>
+                <div class="container">
                     <a href="#" class="btn">View All</a>
                 </div>
             </div>
@@ -269,31 +279,33 @@
     </main>
     <footer>
         <div class="container">
-            <div>
+            <div class="logo container">
                 <a href="#"><img src="images/LogoDark.png" alt="Logo Escura"></a>
                 <p>Design amazing digital experiences that create more happy in the world.</p>
             </div>
-            <div>
+            <div class="container">
                 <p>Get the app</p>
                 <a href="#"><img src="icons/AppStoreDownload.svg" alt="App Store Download Link"></a>
                 <a href="#"><img src="icons/GooglePlayDownload.svg" alt="Google Play Download Link"></a>
             </div>
         </div>
-        <div class="grid footer-links">
-            <a href="#" class="footer-link">Overview</a>
-            <a href="#" class="footer-link">Pricing</a>
-            <a href="#" class="footer-link">Help</a>
-            <a href="#" class="footer-link">Features</a>
-            <a href="#" class="footer-link">Careers</a>
-        </div>
+        <nav>
+            <div class="grid footer-links">
+                <a href="#" class="footer-link">Overview</a>
+                <a href="#" class="footer-link">Pricing</a>
+                <a href="#" class="footer-link">Help</a>
+                <a href="#" class="footer-link">Features</a>
+                <a href="#" class="footer-link">Careers</a>
+            </div>
+        </nav>
         <div class="mobile">
-            <div>
+            <div class="social">
                 <img src="icons/Facebook.svg" alt="Facebook Icon">
                 <img src="icons/Twitter.svg" alt="Twitter Icon">
                 <img src="icons/Instagram.svg" alt="Instagram Icon">
                 <img src="icons/Linkedin.svg" alt="Linkedin Icon">
+                <hr>
             </div>
-            <hr>
             <div class="container">
                 <a href="#">Terms & Conditions</a>
                 <a href="#">Privacy Police</a>
@@ -305,7 +317,7 @@
             <div>
                 <p>© 2023 coco. All rights reserved.</p>
             </div>
-            <div>
+            <div class="social">
                 <img src="icons/Twitter.svg" alt="Twitter Icon">
                 <img src="icons/Linkedin.svg" alt="LinkedIn Icon">
                 <img src="icons/Facebook.svg" alt="Facebook Icon">
