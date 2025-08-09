@@ -30,7 +30,11 @@ img{
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
+}
+
+li{
+    list-style: none;
 }
 
 hr{
@@ -40,10 +44,10 @@ hr{
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 2.5rem, 5rem);
     font-weight: 550;
     color: var(--title-color);
-    margin: 1rem 1.25rem 0.875rem 1.25rem;
+    margin: 1rem 1.25rem 0.875rem;
 }
 
 footer{
@@ -63,6 +67,7 @@ footer{
     font-size: 0.875rem;
     justify-content: center;
     text-align: center;
+    color: #fff;
 }
 
 .btn-transparent{
@@ -91,9 +96,24 @@ footer{
     margin: 1.4rem 1rem;
 }
 
+.grid{
+    display: grid;
+}
+
+.cards-header{
+    grid-template-areas: 
+    "card-header-start"
+    "card-header-mid"
+    "card-header-end";
+}
+
+.card-header-start{ grid-area: card-header-start; }
+.card-header-mid{ grid-area: card-header-mid; }
+.card-header-end{ grid-area: card-header-end; }
+
 .hero-main .container{
     gap: 1rem;
-    margin: 3rem 1.25rem 0.875rem 1.25rem;
+    margin: 3rem 1.25rem 0.875rem;
 }
 
 .hero-subtitle{
@@ -101,6 +121,10 @@ footer{
     align-items: flex-end;
     color: var(--subtitle-color);
     font-size: 1rem;
+}
+
+.hero-subtitle p{
+    margin: 0 1.25rem -1.5rem 0.4rem;
 }
 
 .hero-interactions{
@@ -129,7 +153,7 @@ footer{
 }
 
 .hero-cards{
-    margin: 4.313rem 1.25rem 3rem 1.25rem;
+    margin: 4.313rem 1.25rem 3rem;
 }
 
 .divider{
@@ -138,7 +162,7 @@ footer{
 }
 
 .insights{
-    margin: 3.5rem 1.25rem 3.5rem 1.25rem;
+    margin: 3.5rem 1.25rem 3.5rem;
 }
 
 .insights h2{
@@ -153,7 +177,7 @@ footer{
 
 .ratings{
     align-items: center;
-    margin: 1rem 0 1.8rem 0;
+    margin: 1rem 0 1.8rem;
     gap: 1rem;
     line-height: 1.625rem;
 }
@@ -172,20 +196,16 @@ footer{
     margin-top: 3.5rem;
 }
 
-.grid{
-    display: grid;
-}
-
 .feat-cards{
     grid-template-columns: 1fr;
-    grid-template-rows: 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "main"
         "innovation"
         "security"
         "functionality";
     gap: 1.5rem;
-    margin: 0 1.25rem 0 1.25rem;
+    margin: 0 1.25rem 0;
 }
 
 .feat-card-main{
@@ -200,7 +220,7 @@ footer{
 }
 
 .feat-card-main p{
-    margin: 0 0 2.3rem 0;
+    margin: 0 0 2.3rem;
     color: var(--subtitle-color);
 }
 
@@ -214,7 +234,7 @@ footer{
 .feat-card-innovation h4{
     font-size: 1.5rem;
     color: var(--title-color);
-    margin: 1.8rem 0 1rem 0;
+    margin: 1.8rem 0 1rem;
     font-weight: 600;
 }
 
@@ -223,7 +243,7 @@ footer{
 }
 
 .learn-more a{
-    margin: 2rem 0 0.7rem 0;
+    margin: 2rem 0 0.7rem;
     color: #000;
     align-items: center;
     gap: 0.5rem;
@@ -242,7 +262,7 @@ footer{
 .feat-card-security h4{
     font-size: 1.5rem;
     color: var(--title-color);
-    margin: 1.8rem 0 1rem 0;
+    margin: 1.8rem 0 1rem;
     font-weight: 600;
 }
 
@@ -262,7 +282,7 @@ footer{
 .feat-card-functionality h4{
     font-size: 1.5rem;
     color: var(--title-color);
-    margin: 1.8rem 0 1rem 0;
+    margin: 1.8rem 0 1rem;
     font-weight: 600;
 }
 
@@ -273,6 +293,8 @@ footer{
 .feat-card-functionality .btn { padding: 0.6rem; }
 
 .information{
+    display: flex;
+    flex-direction: column;
     margin-top: 7rem;
     padding: 1.25rem;
 }
@@ -290,7 +312,7 @@ footer{
 
 .information .container{
     align-items: center;
-    margin: 2.5rem 0 1.8rem 0;
+    margin: 2.5rem 0 1.8rem;
     gap: 1rem;
     line-height: 1rem;
     font-weight: 500;
@@ -336,7 +358,7 @@ footer{
 
 .subtitle{
     color: var(--subtitle-color);
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 2rem;
     text-align: center;
 }
 
@@ -348,7 +370,7 @@ footer{
 
 .card-pricing{
     background-color: #fff;
-    padding: 2.5rem 1.5rem 3rem 1.5rem;
+    padding: 2.5rem 1.5rem 3rem;
     border-radius: 1rem;
 }
 
@@ -368,7 +390,7 @@ footer{
 .card-pricing > p{
     font-size: 1rem;
     text-align: center;
-    margin: 0.5rem 0 2rem 0;
+    margin: 0.5rem 0 2rem;
 }
 
 .card-pricing .container{
@@ -378,6 +400,34 @@ footer{
 
 .card-pricing .container p{
     margin-bottom: 0.8rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.head-card-pricing-main{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.container .head-card-pricing-main .tag{
+    padding: 0.125rem 0.625rem;
+    margin-top: 0.3rem;
+    align-items: baseline;
+}
+
+.main h2{ 
+    font-size: 2.5rem;
+    font-weight: 650;
+    letter-spacing: 3px;
+}
+
+.main h4{
+    font-size: 1.5rem;
+    font-weight: 650;
+    color: var(--title-color);
 }
 
 .main h5{
@@ -395,7 +445,18 @@ footer{
     font-weight: 650;
 }
 
-.main .container p{
+.price-card-pricing-main{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+.main span{
+    color: var(--subtitle-color);
+}
+
+.features-card-pricing-main .container p{
     margin-bottom: 0.5rem;
 }
 
@@ -419,7 +480,7 @@ footer{
 }
 
 .cards-customers{
-    margin: 2rem 0 2.7rem 0;
+    margin: 2rem 0 2.7rem;
     padding: 1rem;
     box-shadow: 0 0 0.5rem var(--backcolor);
     text-align: start;
@@ -434,7 +495,7 @@ footer{
     color: var(--subtitle-color);
 }
 .card-customer .rating-stars{
-    margin: 1.5rem 0 1.5rem 0;
+    margin: 1.5rem 0 1.5rem;
 }
 
 .card-customer .rating-stars img{
@@ -454,7 +515,7 @@ footer{
 
 .page-ending{
     flex-direction: column;
-    margin: 7rem 1.25rem 4rem 1.25rem;
+    margin: 7rem 1.25rem 4rem;
 }
 
 .page-ending h2{
@@ -464,13 +525,13 @@ footer{
 }
 
 .page-ending p{
-    margin: 1rem 0 2.875rem 0;
+    margin: 1rem 0 2.875rem;
     color: var(--subtitle-color);
     line-height: 1.625rem;
 }
 
 footer{
-    padding: 4rem 1.25rem 3.5rem 1.25rem;
+    padding: 4rem 1.25rem 3.5rem;
 }
 
 footer .container{
@@ -478,7 +539,7 @@ footer .container{
     gap: 0.5rem;
 }
 
-.logo{
+.logo-footer{
     margin-bottom: 2rem;
     gap: 1rem;
 }
@@ -505,4 +566,114 @@ footer .container{
     flex-direction: row;
     gap: 2.5rem;
     margin-bottom: 1.5rem;
+}
+
+@media(min-width: 1440px){
+
+    
+    h1{
+        font-size: clamp(3rem, 4.5rem, 5rem);
+    }
+    
+    section{
+        margin: 2rem 5rem 0 5rem;
+    }
+
+    header{
+        margin: 2rem 5rem 0 5rem;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+    }
+
+    .container .logo{
+        align-items: center;
+    }
+
+    .container ul{
+        gap: 1rem;
+        flex-direction: row;
+        margin-left: 2.5rem;
+    }
+
+    .cards-headers{
+        grid-template-areas: 
+        "card-header-start card-header-end"
+        "card-header-mid .";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /*terminar*/
+
+    .insights{
+        margin: 2rem 5rem 10rem 5rem;
+        align-items: center;
+    }
+    
+    .insights .container{
+        flex-direction: row-reverse;
+    }
+
+    .insights .container .insights-body div{
+        flex-direction: row;
+    }
+
+    /*eu não aguento mais*/
+
+    .feat-cards{
+        grid-template-areas: 
+        "main innovation"
+        "security functionality";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3.8rem;
+    }
+
+    .card{
+        padding: 3.5rem;
+    }
+
+    .card h4{ font-size: 2rem; }
+
+    .card p{ 
+        font-size: 1.125rem; 
+        line-height: 2rem;
+    }
+
+    .learn-more a{
+        justify-content: flex-end;
+    }
+
+    .feat-card-main h2{
+        font-size: 3.5rem;
+    }
+
+    .information{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .info-body{
+        padding-right: 10rem;
+    }
+
+    .pricing h2{ font-size: 3.5rem; }
+    .pricing p{ font-size: 1.125rem; }
+
+    .cards-pricing{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
+    .main .container{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
 }

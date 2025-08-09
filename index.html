@@ -9,26 +9,30 @@
 <body>
     <header>
         <div class="container header">
-            <div>
-                <a href="#">
-                    <img src="images/Logo.png" alt="Coca Logo">
-                </a>
+            <div class="container logo">
+                <div>
+                    <a href="#">
+                        <img src="images/Logo.png" alt="Coca Logo">
+                    </a>
+                </div>
+                <div class="desktop">
+                    <nav>
+                        <ul class="container">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <div class="mobile">
                 <a href="#">
                     <img src="icons/HamburgerMenu.svg" alt="Hamburger Menu">
                 </a>
             </div>
-            <div class="desktop">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                <a href="#" class="btn">Start For Free</a>
-            </div>
+            <a href="#" class="btn desktop">Start For Free</a>
         </div>
     </header>
     <main>
@@ -45,7 +49,8 @@
                     <p>5.0 (200k reviews)</p>
                 </div>
             </div>
-                <div>
+            <div class="grid cards-header">
+                <div class="card-header-start">
                     <h1>
                         One-click to a modern app landing page.
                     </h1>
@@ -56,50 +61,54 @@
                         </p>
                     </div>
                 </div>
-                <div class="hero-interactions container">
-                    <a href="#" class="btn">Let's Get Started</a>
-                    <a href="#" class="btn-transparent container">
-                        <img src="icons/IconPlay.svg" alt="Play Icon">
-                        <p>Watch a Demo</p>
-                    </a>
-                </div>
-                <div class="hero-users container">
-                    <img src="images/UsersPFP.png" alt="Satisfied Users">
-                    <div class="container">
-                        <h4>38,182</h4>
-                        <p>Satisfied User</p>
+                <div class="card-header-mid">
+                    <div class="hero-interactions container">
+                        <a href="#" class="btn">Let's Get Started</a>
+                        <a href="#" class="btn-transparent container">
+                            <img src="icons/IconPlay.svg" alt="Play Icon">
+                            <p>Watch a Demo</p>
+                        </a>
+                    </div>
+                    <div class="hero-users container">
+                        <img src="images/UsersPFP.png" alt="Satisfied Users">
+                        <div class="container">
+                            <h4>38,182</h4>
+                            <p>Satisfied User</p>
+                        </div>
                     </div>
                 </div>
-            <div class="hero-cards">
-                <img src="images/CardsHero.png" alt="Sections Cards">
-                <!--TODO: tornar isso em cards reais, e não cards de imagem (se sobrar tempo)-->
+                <div class="card-header-end">
+                    <div class="hero-cards">
+                        <img src="images/CardsHero.png" alt="Sections Cards">
+                    </div>
+                </div>
             </div>
         </section>
         <div class="divider">
             <img src="icons/PatreonsLogos.svg" alt="Logos from our Patreons">
         </div>
         <section class="insights">
-            <div>
-                <h2>Organize your Web App easily with Coco</h2>
-                <p>
-                    Enhanced Project Management: 
-                    Obtaining Detailed Time and Date Information for Optimal Tracking and Organization
-                </p>
-                <div class="ratings container">
-                    <h4>2.5x</h4>
+            <div class="container">
+                <div class="insights-body">
+                    <h2>Organize your Web App easily with Coco</h2>
                     <p>
-                        Mobiles apps achive a conversion rate that is 2.7
-                        times higher than mobile websites
+                        Enhanced Project Management: 
+                        Obtaining Detailed Time and Date Information for Optimal Tracking and Organization
                     </p>
+                    <div class="ratings container">
+                        <h4>2.5x</h4>
+                        <p>
+                            Mobiles apps achive a conversion rate that is 2.7
+                            times higher than mobile websites
+                        </p>
+                    </div>
+                    <a href="#" class="btn">Explore Now</a>
                 </div>
-                <a href="#" class="btn">Explore Now</a>
+                <div class="insights-image desktop">
+                    <img src="images/Insights.png" alt="Coco Insights">
+                </div>
             </div>
-            <div class="insights-image mobile">
-                <img src="images/InsightsMobile.png" alt="Coco Insights">
-            </div>
-            <div class="insights-image desktop">
-                <img src="images/Insights.png" alt="Coco Insights">
-            </div>
+
         </section>
         <section class="features">
             <div class="grid feat-cards">
@@ -108,7 +117,7 @@
                     <p>Exceptional Attributes that Differentiate Coco from Competitors</p>
                     <a href="#" class="btn">Get Started</a>
                 </div>
-                <div class="feat-card-innovation">
+                <div class="card feat-card-innovation">
                     <img src="icons/IconLight.svg" alt="Lightbulb Icon">
                     <div>
                         <h4>Innovation Solution</h4>
@@ -121,7 +130,7 @@
                          <a href="#" class="container">Learn More <img class="btn" src="icons/IconArrow.svg"></a>
                     </div>
                 </div>
-                <div class="feat-card-security">
+                <div class="card feat-card-security">
                     <img src="icons/IconLight.svg" alt="Lightbulb Icon">
                     <div>
                         <h4>Secure Database</h4>
@@ -134,7 +143,7 @@
                          <a href="#" class="container">Learn More <img class="btn" src="icons/IconArrow.svg"></a>
                     </div>
                 </div>
-                <div class="feat-card-functionality">
+                <div class="card feat-card-functionality">
                     <img src="icons/IconLight.svg" alt="Lightbulb Icon">
                     <div>
                         <h4>Fully Functional</h4>
@@ -150,7 +159,7 @@
             </div>
         </section>
         <section class="information">
-            <div>
+            <div class="info-body">
                 <h2>Obtain precise time and date information for each project.</h2>
                 <p>
                     Enhanced Project Management: 
@@ -165,7 +174,7 @@
                 </div>
                 <a href="#" class="btn">Explore Now</a>
             </div>
-            <div>
+            <div class="info-img">
                 <img src="images/Infos.png" alt="Coco Infos">
             </div>
         </section>
@@ -182,48 +191,55 @@
                     <h5>Personal</h5>
                     <p>Ideal for small teams and startups.</p>
                     <div class="container">
-                        <p><img src="icons/IconCheck.svg"> Access to all basic features</p>
-                        <p><img src="icons/IconCheck.svg"> Basic reporting and analytics</p>
-                        <p><img src="icons/IconCheck.svg"> Up to 10 individual users</p>
-                        <p><img src="icons/IconCheckEmpty.svg"> 20GB individual data each user</p>
-                        <p><img src="icons/IconCheckEmpty.svg"> Basic chat and email support</p>
-                        <p><img src="icons/IconCheckEmpty.svg"> Another feature</p>
-                        <p><img src="icons/IconCheckEmpty.svg"> Another feature</p>
+                        <p class="container"><img src="icons/IconCheck.svg"> Access to all basic features</p>
+                        <p class="container"><img src="icons/IconCheck.svg"> Basic reporting and analytics</p>
+                        <p class="container"><img src="icons/IconCheck.svg"> Up to 10 individual users</p>
+                        <p class="container"><img src="icons/IconCheckEmpty.svg"> 20GB individual data each user</p>
+                        <p class="container"><img src="icons/IconCheckEmpty.svg"> Basic chat and email support</p>
+                        <p class="container"><img src="icons/IconCheckEmpty.svg"> Another feature</p>
+                        <p class="container"><img src="icons/IconCheckEmpty.svg"> Another feature</p>
                     </div>
-                    <a href="#" class="btn">Get Started</a>
+                    <div class="container">
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
                 </div>
                 <div class="card-pricing main">
                     <div class="container">
                         <div>
-                            <h4>Basic plan</h4>
-                            <p class="tag">Popular</p>
-                            <p>Our most popular plan for small teams</p>
+                            <div class="head-card-pricing-main">
+                                <h4>Basic plan</h4>
+                                <p class="tag">Popular</p>
+                            </div>
+                            <p>Our most popular plan for small teams.</p>
                         </div>
-                        <div>
-                            <h2>$10</h2><p>per month</p>
+                        <div class="price-card-pricing-main">
+                            <h2>$10</h2>
+                            <span>per month</span>
                         </div>
                     </div>
                     <hr>
                     <h5>FEATURES</h5>
                     <p>Everything in our <b>free plan</b> plus...</p>
-                    <div class="container">
+                    <div class="container features-card-pricing-main">
                         <div>
-                            <p><img src="icons/IconCheck.svg"> Access to all basic features</p>
-                            <p><img src="icons/IconCheck.svg"> Basic reporting and analytics</p>
-                            <p><img src="icons/IconCheck.svg"> Up to 10 individual users</p>
-                            <p><img src="icons/IconCheck.svg"> 20GB individual data each user</p>
-                            <p><img src="icons/IconCheck.svg"> Basic chat and email support</p>
+                            <p class="container"><img src="icons/IconCheck.svg"> Access to all basic features</p>
+                            <p class="container"><img src="icons/IconCheck.svg"> Basic reporting and analytics</p>
+                            <p class="container"><img src="icons/IconCheck.svg"> Up to 10 individual users</p>
+                            <p class="container"><img src="icons/IconCheck.svg"> 20GB individual data</p>
+                            <p class="container"><img src="icons/IconCheck.svg"> Basic chat support</p>
                         </div>
                         <div>
-                            <p><img src="icons/IconCheck.svg"> Attend events</p>
-                            <p><img src="icons/IconCheck.svg"> Automatic updates</p>
-                            <p><img src="icons/IconCheck.svg"> Backup your account</p>
-                            <p><img src="icons/IconCheck.svg"> Audit log and notes</p>
-                            <p><img src="icons/IconCheck.svg"> Feature requests</p>
+                            <p class="container"><img src="icons/IconCheck.svg"> Attend events</p>
+                            <p class="container"><img src="icons/IconCheck.svg"> Automatic updates</p>
+                            <p class="container"><img src="icons/IconCheck.svg"> Backup your account</p>
+                            <p class="container"><img src="icons/IconCheck.svg"> Audit log and notes</p>
+                            <p class="container"><img src="icons/IconCheck.svg"> Feature requests</p>
                         </div>
                     </div>
                     <hr>
-                    <a href="#" class="btn">Get Started</a>
+                    <div class="container">
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -234,6 +250,113 @@
             <h2>How happy they are with our service</h2>
             <div class="desktop">
                 <!--TODO: adicionar cada um dos customers do desktop-->
+                <div class="grid cards-customers">
+                    <div class="card-customer">
+                        <div class="container">
+                            <img src="images/IkyPFPpng" alt="User Profile Picure">
+                            <div>
+                                <b>Picky Bobocil</b>
+                                <p>Retiredman</p>
+                            </div>
+                            <img src="icons/quotes.svg" alt="Reference Quotes">
+                        </div>
+                        <div class="rating-stars">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <span>5.0</span>
+                        </div>
+                        <p>
+                            “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                        </p>
+                    </div>
+                    <div class="card-customer">
+                        <div class="container">
+                            <img src="images/PickyPFP.png" alt="User Profile Picure">
+                            <div>
+                                <b>Picky Bobocil</b>
+                                <p>Retiredman</p>
+                            </div>
+                            <img src="icons/quotes.svg" alt="Reference Quotes">
+                        </div>
+                        <div class="rating-stars">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <span>5.0</span>
+                        </div>
+                        <p>
+                            “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                        </p>
+                    </div>
+                    <div class="card-customer">
+                        <div class="container">
+                            <img src="images/ZoePFP.png" alt="User Profile Picure">
+                            <div>
+                                <b>Picky Bobocil</b>
+                                <p>Retiredman</p>
+                            </div>
+                            <img src="icons/quotes.svg" alt="Reference Quotes">
+                        </div>
+                        <div class="rating-stars">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <span>5.0</span>
+                        </div>
+                        <p>
+                            “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                        </p>
+                    </div>
+                    <div class="card-customer">
+                        <div class="container">
+                            <img src="images/NanaPFP.png" alt="User Profile Picure">
+                            <div>
+                                <b>Picky Bobocil</b>
+                                <p>Retiredman</p>
+                            </div>
+                            <img src="icons/quotes.svg" alt="Reference Quotes">
+                        </div>
+                        <div class="rating-stars">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <span>5.0</span>
+                        </div>
+                        <p>
+                            “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                        </p>
+                    </div>
+                    <div class="card-customer">
+                        <div class="container">
+                            <img src="images/UniPFP.png" alt="User Profile Picure">
+                            <div>
+                                <b>Picky Bobocil</b>
+                                <p>Retiredman</p>
+                            </div>
+                            <img src="icons/quotes.svg" alt="Reference Quotes">
+                        </div>
+                        <div class="rating-stars">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <img src="icons/Star.svg" alt="Rating Star">
+                            <span>5.0</span>
+                        </div>
+                        <p>
+                            “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="mobile">
                 <div class="grid cards-customers">
@@ -279,7 +402,7 @@
     </main>
     <footer>
         <div class="container">
-            <div class="logo container">
+            <div class="logo-footer container">
                 <a href="#"><img src="images/LogoDark.png" alt="Logo Escura"></a>
                 <p>Design amazing digital experiences that create more happy in the world.</p>
             </div>
