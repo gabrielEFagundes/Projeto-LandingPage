@@ -30,7 +30,7 @@ img{
 
 a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 li{
@@ -61,7 +61,7 @@ footer{
 
 .btn{
     background-color: var(--primary-color);
-    padding: 0.875rem 1.25rem;
+    padding: 1rem 2.3rem;
     border-radius: 100px;
     font-weight: 500;
     font-size: 0.875rem;
@@ -108,7 +108,7 @@ footer{
 }
 
 .card-header-start{ grid-area: card-header-start; }
-.card-header-mid{ grid-area: card-header-mid; }
+.card-header-mid{ grid-area: card-header-mid; flex-direction: column; }
 .card-header-end{ grid-area: card-header-end; }
 
 .hero-main .container{
@@ -159,6 +159,8 @@ footer{
 .divider{
     background-color: var(--primary-color);
     padding: 1rem;
+    gap: 6.5rem;
+    overflow: hidden;
 }
 
 .insights{
@@ -591,6 +593,10 @@ footer .container{
         display: flex;
     }
 
+    .desktop a{
+        color: #000;
+    }
+
     .container .logo{
         align-items: center;
     }
@@ -601,15 +607,44 @@ footer .container{
         margin-left: 2.5rem;
     }
 
-    .cards-headers{
+    .btn{ font-size: 1rem; }
+    .btn-transparent{ font-size: 1rem; }
+
+    .cards-header{
         grid-template-areas: 
         "card-header-start card-header-end"
         "card-header-mid .";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 48vw 2fr;
+        grid-template-rows: 40vw 1fr;
+        gap: 2rem;
+        margin-bottom: 3rem;
     }
 
-    /*terminar*/
+    .hero-subtitle{
+        position: relative;
+        margin-left: 16rem;
+        margin-top: -2rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        gap: 1rem;
+    }
+
+    .card-header-start{
+        padding-top: 4rem;
+    }
+
+    .card-header-start h1{
+        font-weight: 600;
+    }
+
+    .card-header-mid{
+        align-items: center;
+        padding-bottom: 2rem;
+        flex-direction: row;
+        margin-right: -6rem;
+    }
+
+    .divider{ padding: 2.2rem 0 2.2rem }
 
     .insights{
         margin: 2rem 5rem 10rem 5rem;
@@ -623,8 +658,6 @@ footer .container{
     .insights .container .insights-body div{
         flex-direction: row;
     }
-
-    /*eu não aguento mais*/
 
     .feat-cards{
         grid-template-areas: 
